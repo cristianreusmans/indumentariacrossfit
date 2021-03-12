@@ -1,3 +1,98 @@
+body {
+     background: black;
+     color: white;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Contenedor definido en html, ubicamos los botones de navegacion*/
+#container {
+     width: auto;
+     margin: 0px auto;
+     
+     border: 1px;
+
+}
+
+/*Definimos estilo de cabecera*/
 header  {
-    background: green;
+    background: black;
+    color: white;
+    height: 100ppx;
+    width: 10%;
+
+}
+
+/*Definimos el texto de cabecera*/
+h1  {
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/*Esta es una manera de optimizar lineas de codigos*/
+h2  { 
+    font: bold 15px sans-serif;
+} 
+
+/*Comando para limitar en bordes elementos en bloques*/
+header,section,footer,aside,nav,article, hgroup 
+    { 
+    display: block;
+} 
+
+/*Aplicamos un background al nav*/
+nav {
+    background: black;
+    height: 50px;
+    border-bottom: 1px solid black;
+
+
+}
+
+/*Declaramos menu de navegacion*/
+nav ul li  {
+    float: left;
+    list-style: none;
+    margin: 10px; 
+    line-height: 30px;  
+}
+
+/*Es para que cuando floto un elemento los de abajo se queden en donde estan*/
+.clearfix {
+    clear: both;
+}  
+
+/*Definimos como queremos ver el contenido*/
+#content   {
+    float: right;
+    width: calc(80% - 80px);
+    min-height: auto;
+    background: white;
+    padding: 40px;
+}
+
+/*Definimos como queremos ver los articulos*/
+/*.article {
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+*/
+/*Definimos como se vera el boton buscar*/
+aside {
+    float: right;
+    width: calc(20% - 20px);
+    background: black;
+    min-height: 500px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+footer{
+    text-align: center;
+    line-height: auto;
+
 }
