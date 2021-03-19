@@ -2,7 +2,7 @@
 <html lang="es"> <!-- Indica el idioma de la pagina -->
     <head>
         <meta charset="utf-8" /> <!-- Codificacion de caracteres -->
-        <title>Crossfit Indumentaria</title>
+        <title>Nodull Indumentaria</title>
         <meta name="description" content="Indumentaria crossfit"/> <!-- Etiqueta que ayuda a dar mas informacion para el buscador web -->
         <meta name="author " content="Cristian Reusmans"/>
         <meta name="keywords" content="Ropa crossfit, short crossfit, remera crossfit, calza crossfit, top crossfit">
@@ -11,112 +11,76 @@
             
     </head>
     <body>
-        
-        <div id="container">
-
-            <header> <!-- Cabecera -->
-                <figure>
-                    <img src="Imagenes/Logo1.jpeg" alt="Diseño de la marca" width="auto" height="auto">
-                </figure>
-                <h1>Crossfit Indumentaria</h1>
-            
-            </header>
-
-            <nav id="navegacion">
-
-                <ul> <!-- Etiquetas - Items que pertenecen a una misma lista -->
-                   <li>
-                       <a href="index.html">
-                            Inicio 
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="index.html">
-                            Productos
-                        </a>    
-                    </li>
-
-                    <li>
-                        <a href="index.html">
-                            Contacto
-                        </a>
-                    </li>
-
-                </ul>
-
-        
+        <header class="cabecera"> <!-- Cabecera -->
+            <nav class="nav__cabecera">
+               <div class="container nav__container">
+                    <div class="logo">
+                        <h2 class="logo_name">Nodull<span class="point">.</span></h2>
+                    </div>
+                    <div class="link">
+                        <a href="#" class="link">Inicio</a>
+                        <a href="#" class="link">Productos</a>
+                        <a href="#" class="link link--active">Contacto</a>
+                        <aside> <!-- Iformacion relacionada con el contenido lateral -->
+                            <form><!-- Declaramos el buscador-->
+                                <input type="text">
+                                <input type="submit" value="Buscar">
+                            </form>
+                           </aside>
+                    </div>
+               </div>
             </nav>
-
-            <div class="clearfix"></div>
-
-            <section id="index.html"> <!-- Contenido -->
             
-                <article class="article"> <!-- Detalla el contenido -->
-                    
-                        <h2></h2>
-                        <span></span> <!-- Etiquetas -->
-                        <small></small>
-                </article>
-                        
-                <article class="article"> <!-- Detalla el contenido -->
-                    
-                        <h2></h2>
-                        <span></span> <!-- Etiquetas -->
-                        <small></small>
-                </article>
-
-                <article class="article"> <!-- Detalla el contenido -->
-                    
-                         <h2></h2>
-                         <span></span> <!-- Etiquetas -->
-                         <small></small>
-                </article>
-
-                   
-                    
-                        
-                </article>
-    
+            <section class="container cabecera__main">
+                <div class="cabecera_textos">
+                    <h1 class="titulo">Calidad<span class="titulo--active"> En Indumentaria Deportiva</span></h1>
+                </div>
+                <img src="Imagenes/logo.jpg" class="logo__img">
             </section>
+        </header>
 
-            <aside> <!-- Iformacion relacionada con el contenido lateral -->
-                    <!-- Declaramos el buscador-->
-                <form>
-                    <input type="text">
-                    <input type="submit" value="Buscar">
-
-                </form>
-    
-    
-            </aside>
-
-            <div class="clearfix"></div>
-    
-            <footer> <!-- Pie de pagina -->
-                Indumentaria Crossfit WEB &copy; 2020
-            </footer>
+        <main>
+            <section class="categorias">
+                <div class="container">
+                    <h2 class="subtitulos">Categorias <span class="point">.</span></h2>
+                    <article class="container-cards">
+                        <div class="card">
+                            <img src="Imagenes/women.jpg" class="card_img">
+                            <a href="#" class="card__button">women</a>
+                        </div>
+                        <div class="card">
+                            <img src="Imagenes/men.jpg" class="card_img">
+                            <a href="#" class="card__button">men</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="email container container--modifier">
+                <h2 class="subtitle subtitle--modifier">Nodull Indumentaria <span class="point">.</span></h2>
+            </section>
             
-            <!-- Pie de pagina 
-            <p> 
-            
-                INDUMENTARIA 
-            
-            </p>
-    
-            -->
-
-        </div>
-
-
+        </main>
         
-
-
+        <footer class="footer"> 
+            <div class="socialmedia">
+                <p class="socialmedia__legend">Siguenos en:</p>
+                <i class='socialmedia__icon bx bxl-instagram' ></i>
+            </div>
+            <div class="contact">
+                <div class="item__contact">
+                    <i class='bx bxl-whatsapp'></i>
+                    <h3 class="contact__title">Contactanos</h3>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="item__contact">
+                    <i class='bx bx-mail-send' ></i>
+                    <h3 class="contact__title">Contactanos</h3>
+                </div>
+            </div>
+            <divc class="footer__copy">
+                <p class="copyright">Indumentaria Crossfit WEB &copy; 2020</p>
+            </div>
+        </footer>
     </body>
 </html>
-
-
-
-
-
- 

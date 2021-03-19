@@ -1,98 +1,140 @@
+/*URL estilos de fuentes de googlefonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+
+:root {
+    --gold1:#f4bd76;
+    --gold2:#f6cd8f;
+    --gray:#ffffff80;
+    --gold2:#f7d9d990;
+    --black1:#1a1b1f;
+    --black2:#30353b;
+    --shadow: 0 8px 8px;
+    --color_shadow:#00000033;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-     background: black;
-     color: white;
-     font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif; 
 }
 
-/*Contenedor definido en html, ubicamos los botones de navegacion*/
-#container {
-     width: auto;
-     margin: 0px auto;
-     
-     border: 1px;
-
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 100px 0;
+    height: auto;
+}
+/*Contenedor pie de pagina*/
+.container_modifier {
+    width: 60%;
 }
 
-/*Definimos estilo de cabecera*/
-header  {
-    background: black;
-    color: white;
-    height: 100ppx;
-    width: 10%;
-
+.cabecera {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, var(--black2) 0%, var(--black2) 100%);
+}
+.nav__cabecera {
+     color: #fff;
+     height: 70px;
+     border-bottom: 1px solid rgba(255,255,255, 0.1);
+}
+/*Definimos se ven los botones de navegacion al princio de la pag.*/
+.nav__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+    padding: 0;
 }
 
-/*Definimos el texto de cabecera*/
-h1  {
-    color: white;
-    font-size: 20px;
-    font-family: sans-serif;
-    font-weight: bold;
+.logo__name {
+    font-size: 24px;
 }
 
-/*Esta es una manera de optimizar lineas de codigos*/
-h2  { 
-    font: bold 15px sans-serif;
-} 
-
-/*Comando para limitar en bordes elementos en bloques*/
-header,section,footer,aside,nav,article, hgroup 
-    { 
-    display: block;
-} 
-
-/*Aplicamos un background al nav*/
-nav {
-    background: black;
-    height: 50px;
-    border-bottom: 1px solid black;
-
-
+.link {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px;
 }
 
-/*Declaramos menu de navegacion*/
-nav ul li  {
-    float: left;
-    list-style: none;
-    margin: 10px; 
-    line-height: 30px;  
+.link--active {
+    color: var(--gold1);
+    font-weight: 700;
 }
 
-/*Es para que cuando floto un elemento los de abajo se queden en donde estan*/
-.clearfix {
-    clear: both;
-}  
-
-/*Definimos como queremos ver el contenido*/
-#content   {
-    float: right;
-    width: calc(80% - 80px);
-    min-height: auto;
-    background: white;
-    padding: 40px;
+.point {
+    color: var(--gold1);
 }
 
-/*Definimos como queremos ver los articulos*/
-/*.article {
-    color: white;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
+.cabecera__main {
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    padding: 0;
 }
-*/
-/*Definimos como se vera el boton buscar*/
-aside {
-    float: right;
-    width: calc(20% - 20px);
-    background: black;
-    min-height: 500px;
-    padding-right: 10px;
-    padding-top: 10px;
+.logo__img {
+    object-fit: cover;
+    height: calc(100vh - 70px);
 }
 
-footer{
+.cabecera__textos {
+    font-size: 56px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.titulo--active {
+    color: var(--gold1);
+    font-weight: 700;
+}
+
+.copy {
+    font-size: 24px;
+    color: var(--gray);
+    text-shadow: var(--shadow) var(--color-shadow);
+    margin: 15px 0;
+}
+
+.copy__active {
+    font-weight: 700;
+
+}
+/*Esto es para definir estilo de un boton.
+.cta {
+    padding: 20px ;
+    display: inline-block;
+    background: linear-gradient(180deg, #f7ce90 0%, #f48d76 100%);
+    text-decoration: none;
+    color: var(--black2);
+    font-weight: 700;
+    box-shadow: var(--shadow) var(--color_shadow);
+    border-radius: 6px;
+} */
+
+/*cards*/
+
+.categorias {
+    background: #fafafa;
+}
+
+.subtitulos {
+    font-size: 42px;
+}
+
+.subtitle--modifier {
     text-align: center;
-    line-height: auto;
+    margin-bottom: 16px;
+    
+
 
 }
+
