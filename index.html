@@ -2,20 +2,25 @@
 <html lang="es"> <!-- Indica el idioma de la pagina -->
     <head>
         <meta charset="utf-8" /> <!-- Codificacion de caracteres -->
-        <title>Nodull Indumentaria</title>
+        <title>Willdog Indumentaria</title>
         <meta name="description" content="Indumentaria crossfit"/> <!-- Etiqueta que ayuda a dar mas informacion para el buscador web -->
         <meta name="author " content="Cristian Reusmans"/>
         <meta name="keywords" content="Ropa crossfit, short crossfit, remera crossfit, calza crossfit, top crossfit">
 
         <link rel="stylesheet" href="Estilos.css"> <!-- Linkeamos el archivo html con ccs (Estilos.css)-->
-            
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+        <link rel="stylesheet" href="css/fontawesome.css">
+        
+        <script src="script.js"></script>
+        
+   
     </head>
     <body>
         <header class="cabecera"> <!-- Cabecera -->
             <nav class="nav__cabecera">
                <div class="container nav__container">
                     <div class="logo">
-                        <h2 class="logo_name">Nodull<span class="point">.</span></h2>
+                        <h2 class="logo_name">Willdog<span class="point">.</span></h2>
                     </div>
                     <div class="link">
                         <a href="#" class="link">Inicio</a>
@@ -23,7 +28,7 @@
                         <a href="#" class="link link--active">Contacto</a>
                         <aside> <!-- Iformacion relacionada con el contenido lateral -->
                             <form><!-- Declaramos el buscador-->
-                                <input type="text">
+                                <input type="text" placeholder="Buscar Productos">
                                 <input type="submit" value="Buscar">
                             </form>
                            </aside>
@@ -42,44 +47,104 @@
         <main>
             <section class="categorias">
                 <div class="container">
-                    <h2 class="subtitulos">Categorias <span class="point">.</span></h2>
+                    <h2 class="subtitulos">Categorias<span class="point">.</span></h2>
                     <article class="container-cards">
-                        <div class="card">
-                            <img src="Imagenes/women.jpg" class="card_img">
-                            <a href="#" class="card__button">women</a>
+                        <div class="cards">
+                            <img src="Imagenes/women.jpg" class="cards_img">
+                            <a href="#" class="cards__button">Women</a>
                         </div>
-                        <div class="card">
-                            <img src="Imagenes/men.jpg" class="card_img">
-                            <a href="#" class="card__button">men</a>
+                        <div class="cards">
+                            <img src="Imagenes/men.jpg" class="cards_img">
+                            <a href="#" class="cards__button">Men</a>
                         </div>
                     </article>
                 </div>
-            </section>
-            <section class="email container container--modifier">
-                <h2 class="subtitle subtitle--modifier">Nodull Indumentaria <span class="point">.</span></h2>
-            </section>
-            
+            </section> 
+                
         </main>
         
         <footer class="footer"> 
+            <div class="container footer__caption"></div>
+            <section class="get-email">
+                <h3 class="title_footer">Newsletter</h3>
+                <form class="newsletter newsletter--modifier">
+                    <input type="text" class="newsletter_input" placeholder="Ingresa tu email">
+                    <input type="submit" class="newsletter_submit" value="Suscribite">
+                </form>
+            </section>    
+          <!-- Botones redes sociales-->
             <div class="socialmedia">
-                <p class="socialmedia__legend">Siguenos en:</p>
-                <i class='socialmedia__icon bx bxl-instagram' ></i>
-            </div>
-            <div class="contact">
-                <div class="item__contact">
-                    <i class='bx bxl-whatsapp'></i>
-                    <h3 class="contact__title">Contactanos</h3>
+                <div class="socialmedia__icon">
+                    
+                    <a href="http://www.instagram.com/sharer.php?u=www.willdog.com">
+                        <i class="socialmedia__icon fab fa-instagram"></i>   
+                    </a>
+                    <a href="http://www.facebook.com/sharer.php?u=www.willdog.com">
+                        <i class="socialmedia__icon fab fa-facebook"></i> 
+                    </a>
+                    <a href="https://api.whatsapp.com/send?text=www.Willdog.com.ar">
+                        <i class="socialmedia__icon fab fa-whatsapp"></i>
+                    </a>
+                   
                 </div>
             </div>
-            <div class="contact">
-                <div class="item__contact">
-                    <i class='bx bx-mail-send' ></i>
-                    <h3 class="contact__title">Contactanos</h3>
+         <!-- Botones redes sociales-->
+
+           <!-- Error formulario de contacto 
+                <div class="modal_wrap">
+                    <div class="mensaje_modal">
+                        <h3>Errores encontrados</h3>
+                        <p>Ingresa un nombre</p>
+                        <p>Ingresa un correo electronico</p>
+                        <p>Escribe un mensaje</p>
+                        <span id="btnClose">Cerrar</span>
+                    </div>
+                </div> 
+                
+           -->
+          <!-- Formulario de contacto -->
+                <section class="form_wrap">
+                    <section class="contact_info">
+                        <section class="info_title">
+                            <span class="fa fa-user-circle"></span>
+                            <h2>Informacion de contacto</h2>
+                        </section>
+                        <section class="info_items">
+                            <p><span class="fa fa-envelope"></span>willdog@hotmail.com</p>
+                            <p><span class="fa fa-mobile"></span>0341153146935</p>
+                        </section>
+                    </section>
+                    <form action="" class="form_contact">
+                        <h2>Dejanos tu mensaje</h2>
+                        <div class="user_info">
+                            <label for="names">Nombres *</label>
+                                <input type="text" id="names">
+                            <label for="phone">Telefono</label>
+                                <input type="text" id="phone">
+                            <label for="email">Mail *</label>
+                                <input type="text" id="email">
+                            <label for="mensaje">Mensaje *</label>
+                                <textarea name="" id="mensaje"></textarea>
+
+                                <input type="button" value="Enviar Mensaje" id="btnSend">
+                        </div>
+                    </form>
+                </section>  
+          <!-- Contacto mail
+                <div class="mailcontacto">
+                    <div class="mailcontacto">
+                        <h4>Contactanos:</h4>
+                        <p class="mailcontacto">willdog@hotmail.com</p>
+                    </div>
                 </div>
-            </div>
-            <divc class="footer__copy">
-                <p class="copyright">Indumentaria Crossfit WEB &copy; 2020</p>
+            -->
+            
+            
+             <section class="email container container--modifier">
+                <h2 class="subtitle subtitle--modifier">Willdog Indumentaria<span class="point">.</span></h2>
+            </section>
+            <div class="footer__copy">
+                <p class="copyright">Indumentaria Crossfit WEB &copy; 2021</p>
             </div>
         </footer>
     </body>

@@ -1,14 +1,5 @@
- <img src="Imagenes/logo.jpg" alt=""> <!-- Indicamos donde se encuentra la imagen -->
-    
-                    <footer>
-                            <p>Comentarios (10)</p>
-                    </footer>
-                       
-                    <address> <!-- Esta sentencia indica un link el cual lo marca en cursiva -->
-                            <a href="http://google.com">Visita mi pagina web</a> <!-- Linkeamos una direccion -->
-                        </address>
-                        
-                        
-                         <blockquote cite="http://ikr.com.ar"> <!-- Es para citar una URL o lo que dispongamos -->
-                    Mensaje 1
-                </blockquote>
+Formulario de contacto
+
+Java para frontend
+php para backend
+
