@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!-- Este comando marca la version 5 de HTML -->
+<html lang="es"> <!-- Indica el idioma de la pagina -->
+    <head>
+        <meta charset="utf-8" /> <!-- Codificacion de caracteres -->
+        <title>Willdog Indumentaria</title>
+        <meta name="description" content="Indumentaria crossfit"/> <!-- Etiqueta que ayuda a dar mas informacion para el buscador web -->
+        <meta name="author " content="Cristian Reusmans"/>
+        <meta name="keywords" content="Ropa crossfit, short crossfit, remera crossfit, calza crossfit, top crossfit">
+
+        
+        <link rel="stylesheet" href="Estilos.css"> <!-- Linkeamos el archivo html con ccs (Estilos.css)-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+        <link rel="stylesheet" href="css/fontawesome.css">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+        
+   
+    </head>
+    <body>
+        <script src="script.js"></script> <!-- Linkeamos archivo script.js -->
+
+        <header class="cabecera"> <!-- Cabecera -->
+            <nav class="nav__cabecera">
+               <div class="container nav__container">
+                    <div class="logo">
+                        <h2 class="logo_name">Willdog<span class="point">.</span></h2>
+                    </div>
+                    <!-- Icono Hamburguesa del menu-->
+                    <button class="icono-hamb" type="button">
+                        <p><span class="fa fa-bars" aria-hidden="true"></span></p>
+                    </button>   
+                    
+                    <!-- Menu de navegacion -->
+                    <!-- <div class="link">-->
+                    <!--    <a href="#" class="link">Inicio</a> -->
+                    <!--<a href="#" class="link">Women</a>    
+                        <a href="#" class="link">Men</a>
+                        <a href="#" class="link">Accesorios</a>     
+                        <a href="#" class="link link--active">Contacto</a>
+                    -->
+                    <div class="enlaces-menu" id="enlaces">
+                        <a href="#" class="active">Women</a>
+                        <a href="#" class="active">Men</a>
+                        <a href="#" class="active">Accesorios</a>
+                        <a href="#" class="active">Contacto</a>
+                    </div>
+                        <aside> <!-- Iformacion relacionada con el contenido lateral -->
+                         <form><!-- Declaramos el buscador-->
+                           <input type="text" placeholder="Buscar Productos">
+                           <input type="submit" value="Buscar">
+                         </form>
+                        </aside>
+                    </div>
+               </div>
+            </nav>
+            
+            <section class="container cabecera__main">
+                <div class="cabecera_textos">
+                    <h1 class="titulo">Calidad<span class="titulo--active"> En Indumentaria Deportiva</span></h1>
+                </div>
+                <img src="Imagenes/logo.jpg" class="logo__img">
+            </section>
+        </header>
+        
+        <main>
+            <section class="categorias">
+                <div class="container">
+                    <h2 class="subtitulos">Categorias<span class="point">.</span></h2>
+                    <article class="container-cards">
+                        <div class="cards">
+                            <img src="Imagenes/women.jpg" class="cards_img">
+                            <a href="#" class="cards__button">Women</a>
+                        </div>
+                        <div class="cards">
+                            <img src="Imagenes/men.jpg" class="cards_img">
+                            <a href="#" class="cards__button">Men</a>
+                        </div>
+                    </article>
+                </div>
+            </section> 
+        </main>
+        <!-- Formulario de contacto - Envio de mensaje -->
+        <section class="form_wrap">
+            <section class="mensaje-exito">
+                <h1>Su mensaje se envio exitosamente</h1>
+                <a href="index.html">Enviar nuevo mensaje</a>
+            </section>
+         </section>    
+            <section class="email container container--modifier">
+                <h2 class="subtitle subtitle--modifier">Willdog Indumentaria<span class="point">.</span></h2>
+            </section>
+            <div class="footer__copy">
+                <p class="copyright">Indumentaria Crossfit WEB &copy; 2021</p>
+            </div>
+        </footer>
+    </body>
+</html>
