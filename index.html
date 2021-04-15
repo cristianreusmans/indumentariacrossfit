@@ -7,31 +7,51 @@
         <meta name="author " content="Cristian Reusmans"/>
         <meta name="keywords" content="Ropa crossfit, short crossfit, remera crossfit, calza crossfit, top crossfit">
 
+        
         <link rel="stylesheet" href="Estilos.css"> <!-- Linkeamos el archivo html con ccs (Estilos.css)-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
         <link rel="stylesheet" href="css/fontawesome.css">
         
-        <script src="script.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
         
    
     </head>
     <body>
+        <script src="script.js"></script> <!-- Linkeamos archivo script.js -->
+
         <header class="cabecera"> <!-- Cabecera -->
             <nav class="nav__cabecera">
                <div class="container nav__container">
                     <div class="logo">
                         <h2 class="logo_name">Willdog<span class="point">.</span></h2>
                     </div>
-                    <div class="link">
-                        <a href="#" class="link">Inicio</a>
-                        <a href="#" class="link">Productos</a>
+                    <!-- Icono Hamburguesa del menu-->
+                    <button class="icono-hamb" type="button">
+                        <p><span class="fa fa-bars" aria-hidden="true"></span></p>
+                    </button>   
+                    
+                    <!-- Menu de navegacion -->
+                    <!-- <div class="link">-->
+                    <!--    <a href="#" class="link">Inicio</a> -->
+                    <!--<a href="#" class="link">Women</a>    
+                        <a href="#" class="link">Men</a>
+                        <a href="#" class="link">Accesorios</a>     
                         <a href="#" class="link link--active">Contacto</a>
+                    -->
+                    <div class="enlaces-menu" id="enlaces">
+                        <a href="#" class="active">Women</a>
+                        <a href="#" class="active">Men</a>
+                        <a href="#" class="active">Accesorios</a>
+                        <a href="#" class="active">Contacto</a>
+                    </div>
                         <aside> <!-- Iformacion relacionada con el contenido lateral -->
-                            <form><!-- Declaramos el buscador-->
-                                <input type="text" placeholder="Buscar Productos">
-                                <input type="submit" value="Buscar">
-                            </form>
-                           </aside>
+                         <form><!-- Declaramos el buscador-->
+                           <input type="text" placeholder="Buscar Productos">
+                           <input type="submit" value="Buscar">
+                         </form>
+                        </aside>
                     </div>
                </div>
             </nav>
@@ -60,9 +80,45 @@
                     </article>
                 </div>
             </section> 
-                
         </main>
-        
+        <!-- Ventana Modal-->
+        <div id="formulariomodal" class="modal">
+            <div class="flex" id="flex">
+                <div class="contenido-modal">
+                    <div class="modal-header flex"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Formulario de contacto -->
+        <section class="form_wrap">
+            <section class="contact_info">
+                <section class="info_title">
+                    <span class="fa fa-user-circle"></span>
+                    <h2>Informacion de contacto</h2>
+                </section>
+                <section class="info_items">
+                    <p><span class="fa fa-envelope"></span>willdog@hotmail.com</p>
+                    <p><span class="fa fa-mobile"></span>0341153146935</p>
+                </section>
+            </section>
+            <form action="enviar.php" method="post" class="form_contact">
+                <h2>Dejanos tu mensaje</h2>
+                <div class="user_info">
+                    <label for="names">Nombres *</label>
+                            <input type="text" id="names" name="nombre" required>
+                    <label for="phone">Telefono</label>
+                            <input type="text" id="phone" name="Telefono">
+                    <label for="email">Mail *</label>
+                            <input type="text" id="email" name="correo" required>
+                
+                    <label for="mensaje">Mensaje *</label>
+                            <textarea name="" id="mensaje" name="mensaje"></textarea>
+                            <input type="submit" value="Enviar Mensaje" id="btnSend">
+                           <!-- <input type="button" value="Enviar Mensaje" id="btnSend">-->
+                </div>
+            </form>
+        </section> 
+        <!-- Newletter-->
         <footer class="footer"> 
             <div class="container footer__caption"></div>
             <section class="get-email">
@@ -72,7 +128,7 @@
                     <input type="submit" class="newsletter_submit" value="Suscribite">
                 </form>
             </section>    
-          <!-- Botones redes sociales-->
+            <!-- Botones redes sociales-->
             <div class="socialmedia">
                 <div class="socialmedia__icon">
                     
@@ -85,64 +141,12 @@
                     <a href="https://api.whatsapp.com/send?text=www.Willdog.com.ar">
                         <i class="socialmedia__icon fab fa-whatsapp"></i>
                     </a>
-                   
                 </div>
             </div>
-         <!-- Botones redes sociales-->
-
-           <!-- Error formulario de contacto 
-                <div class="modal_wrap">
-                    <div class="mensaje_modal">
-                        <h3>Errores encontrados</h3>
-                        <p>Ingresa un nombre</p>
-                        <p>Ingresa un correo electronico</p>
-                        <p>Escribe un mensaje</p>
-                        <span id="btnClose">Cerrar</span>
-                    </div>
-                </div> 
-                
-           -->
-          <!-- Formulario de contacto -->
-                <section class="form_wrap">
-                    <section class="contact_info">
-                        <section class="info_title">
-                            <span class="fa fa-user-circle"></span>
-                            <h2>Informacion de contacto</h2>
-                        </section>
-                        <section class="info_items">
-                            <p><span class="fa fa-envelope"></span>willdog@hotmail.com</p>
-                            <p><span class="fa fa-mobile"></span>0341153146935</p>
-                        </section>
-                    </section>
-                    <form action="" class="form_contact">
-                        <h2>Dejanos tu mensaje</h2>
-                        <div class="user_info">
-                            <label for="names">Nombres *</label>
-                                <input type="text" id="names">
-                            <label for="phone">Telefono</label>
-                                <input type="text" id="phone">
-                            <label for="email">Mail *</label>
-                                <input type="text" id="email">
-                            <label for="mensaje">Mensaje *</label>
-                                <textarea name="" id="mensaje"></textarea>
-
-                                <input type="button" value="Enviar Mensaje" id="btnSend">
-                        </div>
-                    </form>
-                </section>  
-          <!-- Contacto mail
-                <div class="mailcontacto">
-                    <div class="mailcontacto">
-                        <h4>Contactanos:</h4>
-                        <p class="mailcontacto">willdog@hotmail.com</p>
-                    </div>
-                </div>
-            -->
-            
-            
-             <section class="email container container--modifier">
+            <section class="email container container--modifier">
                 <h2 class="subtitle subtitle--modifier">Willdog Indumentaria<span class="point">.</span></h2>
             </section>
+            <!-- Pie de Pagina -->
             <div class="footer__copy">
                 <p class="copyright">Indumentaria Crossfit WEB &copy; 2021</p>
             </div>
